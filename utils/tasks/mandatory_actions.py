@@ -11,6 +11,7 @@ from utils.tasks.owlto import OwlTo
 from utils.tasks.multpli import MultPli
 from utils.tasks.aPriori import aPriori
 from utils.tasks.curvance import Curvance
+from utils.tasks.shmonad import Shmonad
 
 from data.config import COMPLETED_ACTIONS
 
@@ -42,7 +43,8 @@ class MandatoryActions:
             ("OwlTo", OwlTo, ["deploy"]),
             ("MultPli", MultPli, ["claim_and_stake"]),
             ("aPriori", aPriori, ["stake_mon"]),
-            ("Curvance", Curvance, ["claim_all_tokens"])
+            ("Curvance", Curvance, ["claim_all_tokens"]),
+            ("Shmonad", Shmonad, ["stake_mon"])
         ]
     
     
