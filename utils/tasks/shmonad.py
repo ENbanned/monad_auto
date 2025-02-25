@@ -40,7 +40,7 @@ class Shmonad(BaseActivity, Base):
         
         return tx_hash
     
-    async def unstake_mon(self, amount: int | float):
+    async def unstake_mon(self, amount: int | float = None):
         
         amount_in_wei = amount.Wei if isinstance(amount, TokenAmount) else self.mon.amount_to_wei(amount)
 
