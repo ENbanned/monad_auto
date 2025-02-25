@@ -165,7 +165,6 @@ class UniswapMonad(BaseActivity, Base):
         
         data = self._prepare_swap_data_mon_to_usdt(
             amount_in=amount_in_wei,
-            min_amount_out=min_amount_out,
             deadline=deadline,
             to_address=self.client.account.address,
         )
