@@ -54,6 +54,7 @@ async def select_random_action(controller: Controller, wallet: Wallet, initial: 
                 1,
                 1,
                 1,
+                1,
             ]
 
         if jai_balance.Wei:
@@ -94,6 +95,7 @@ async def select_random_action(controller: Controller, wallet: Wallet, initial: 
                 controller.uniswap.swap_mon_to_usdt,
             ]
             weights += [
+                1,
                 1,
                 1,
                 1,
